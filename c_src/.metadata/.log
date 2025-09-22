@@ -1,0 +1,60 @@
+!SESSION 2025-09-22 03:09:21.271 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/samadariyan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samadariyan/.eclipse_keyring -data /Users/samadariyan/Learning/embedded-rust/Exercises/flappy-bird-ffi/c_src
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-09-22 03:09:28.170
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-22 03:09:28.171
+!MESSAGE Log4j2 initialized with config file /Users/samadariyan/Learning/embedded-rust/Exercises/flappy-bird-ffi/c_src/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-22 03:09:31.778
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-09-22 03:09:59.279
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-09-22 03:09:59.970
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/updatesite1.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-09-22 03:10:02.706
+!MESSAGE No repository found at https://download.eclipse.org/tools/cdt/releases/latest.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-09-22 03:10:04.439
+!MESSAGE No repository found at https://download.eclipse.org/releases/2024-09.
+
+!ENTRY com.st.stm32cube.ide.common.services 4 0 2025-09-22 03:32:03.152
+!MESSAGE Not able to get any active project build configuration.
+!SESSION 2025-09-22 17:33:21.573 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/samadariyan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samadariyan/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-22 17:33:29.842
+!MESSAGE Log4j2 initialized with config file /Users/samadariyan/Learning/embedded-rust/Exercises/flappy-bird-ffi/c_src/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-22 17:33:42.430
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-09-22 17:35:52.202 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/samadariyan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samadariyan/.eclipse_keyring -data /Users/samadariyan/Learning/embedded-rust/Exercises/flappy-bird-ffi/c_src
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-22 17:36:01.119
+!MESSAGE Log4j2 initialized with config file /Users/samadariyan/Learning/embedded-rust/Exercises/flappy-bird-ffi/c_src/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-22 17:36:10.125
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-22 17:40:04.942
+!MESSAGE Indexed 'lcd_tsc_mpu_drivers' (19 sources, 82 headers) in 6.16 sec: 4,902 declarations; 26,221 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0064%)
