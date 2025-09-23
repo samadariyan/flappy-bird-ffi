@@ -43,12 +43,40 @@ fn main() {
     builder.include("c_src/lcd_tsc_mpu_drivers/Drivers/CMSIS/Device/ST/STM32F3xx/Include");
 
     // 4. Add Define macros, -D (optional)
+    builder.define("DEBUG", None);
+    builder.define("USE_HAL_DRIVER", None);
+    builder.define("STM32F303xC", None);
 
     // 5. Add os or .asm files (optional)
+    builder.file("c_src/lcd_tsc_mpu_drivers/Core/Startup/startup_stm32f303cctx.s");
 
     // 6. Add compiler flags
+    builder
+        .flag("-mcpu=cortex-m4")
+        .flag("-mthumb")
+        .flag("-mfpu=fpv4-sp-d16")
+        .flag("-mfloat-abi=hard")
+        .flag("-std=gnu11")
+        .flag("-g3")
+        .flag("-O0")
+        .flag("-ffunction-sections")
+        .flag("-fdata-sections")
+        .flag("-Wall")
+        .flag("-fstack-usage")
+        .flag("-fcyclomatic-complexity");
 
-    // 7. generate the static library
+    // 7. Add linker flags
+    println!("cargo::rustc-link-arg=--specs=nano.specs");
+    println!("cargo::rustc-link-arg=--specs=nosys.specs");
+    println!("cargo::rustc-link-arg=-Wl,--gc-sections");
+    println!("cargo::rustc-link-arg=-Wl,--start-group");
+    println!("cargo::rustc-link-arg=-lc");
+    println!("cargo::rustc-link-arg=-lm");
+    println!("cargo::rustc-link-arg=-Wl,--end-group");
 
-    // 8. you may communicate with the cargo from build script using println!() statements.
+    // 8. generate the static library
+    builder.compile("stm32_c_drivers");
+
+    // 9. you may communicate with the cargo from build script using println!() statements.
+    println!("cargo::rustc-link-lib=static=stm32_c_drivers")
 }
