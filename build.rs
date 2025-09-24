@@ -20,6 +20,7 @@ fn main() {
 
         if path.extension().and_then(|s| s.to_str()) == Some("c") {
             println!("Compiling {:?}", path);
+            println!("cargo::rerun-if-changed={}", path.display());
             builder.file(&path);
         }
     }
@@ -32,6 +33,7 @@ fn main() {
 
         if path.extension().and_then(|s| s.to_str()) == Some("c") {
             println!("Compiling {:?}", path);
+            println!("cargo::rerun-if-changed={}", path.display());
             builder.file(&path);
         }
     }
@@ -49,6 +51,9 @@ fn main() {
 
     // 5. Add os or .asm files (optional)
     builder.file("c_src/lcd_tsc_mpu_drivers/Core/Startup/startup_stm32f303cctx.s");
+    println!(
+        "cargo::rerun-if-changed=c_src/lcd_tsc_mpu_drivers/Core/Startup/startup_stm32f303cctx.s"
+    );
 
     // 6. Add compiler flags
     builder
