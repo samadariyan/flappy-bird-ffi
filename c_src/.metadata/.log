@@ -108,3 +108,28 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samad
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-09-23 18:57:30.299
 !MESSAGE No repository found at https://download.eclipse.org/releases/2024-09.
+!SESSION 2025-09-24 07:50:37.626 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/samadariyan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samadariyan/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-24 07:50:42.608
+!MESSAGE Log4j2 initialized with config file /Users/samadariyan/Learning/embedded-rust/Exercises/flappy-bird-ffi/c_src/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-24 07:50:50.179
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-09-24 07:51:16.697
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-09-24 07:51:17.556
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/updatesite1.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-09-24 07:51:20.285
+!MESSAGE No repository found at https://download.eclipse.org/tools/cdt/releases/latest.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-09-24 07:51:21.983
+!MESSAGE No repository found at https://download.eclipse.org/releases/2024-09.
