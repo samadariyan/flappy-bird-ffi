@@ -94,10 +94,10 @@ fn main() {
     println!("cargo::rustc-link-arg=--specs=nano.specs");
     println!("cargo::rustc-link-arg=--specs=nosys.specs");
     println!("cargo::rustc-link-arg=-Wl,--gc-sections");
-    println!("cargo::rustc-link-arg=-Wl,--start-group");
-    println!("cargo::rustc-link-arg=-lc");
-    println!("cargo::rustc-link-arg=-lm");
-    println!("cargo::rustc-link-arg=-Wl,--end-group");
+    // println!("cargo::rustc-link-arg=-Wl,--start-group");
+    // println!("cargo::rustc-link-arg=-lc");
+    // println!("cargo::rustc-link-arg=-lm");
+    // println!("cargo::rustc-link-arg=-Wl,--end-group");
 
     /*
     All linker flags from STM32CubeIDE
@@ -118,14 +118,15 @@ fn main() {
     */
 
     // 8. generate object files for C files
-    builder.compile("stm32_c_drivers");
 
-    // let object_files = builder.compile_intermediates();
+    // builder.compile("stm32_c_drivers");
+    let object_files = builder.compile_intermediates();
 
 
     // 9. this tells the cargo to pass each object file directly to the linker
-    println!("cargo::rustc-link-lib=stm32_c_drivers");
-    //  for obj_file in &object_files {
-    //     println!("cargo::rustc-link-arg={}", obj_file.display());
-    // }
+     
+    // println!("cargo::rustc-link-lib=stm32_c_drivers");
+     for obj_file in &object_files {
+        println!("cargo::rustc-link-arg={}", obj_file.display());
+    }
 }
