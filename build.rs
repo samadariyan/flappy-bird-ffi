@@ -1,5 +1,6 @@
-
 // we have to take the help of CC crate to compile C code
+
+use std::fs;
 
 fn main() {
     // let out_dir = env::var("OUT_DIR").expect("OUT_DIR not set by Cargo");
@@ -62,7 +63,7 @@ fn main() {
         .flag("-fstack-usage")
         .flag("-mfpu=fpv4-sp-d16")
         .flag("-mfloat-abi=hard")
-        .flag("-mthumb");  
+        .flag("-mthumb");
     /*
     All compiler flags frm STM32CubeIDE
     -mcpu=cortex-m4
@@ -121,5 +122,4 @@ fn main() {
 
     // 9. this tells the cargo to pass each object file directly to the linker
     println!("cargo::rustc-link-lib=stm32_c_drivers");
-
 }
