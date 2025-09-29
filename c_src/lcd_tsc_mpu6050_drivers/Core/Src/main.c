@@ -63,7 +63,7 @@ static void MX_I2C1_Init(void);
  * @brief  The application entry point.
  * @retval int
  */
-int main(void)
+int c_main(void)
 {
 
   /* USER CODE BEGIN 1 */
