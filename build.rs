@@ -3,7 +3,7 @@
 
 fn main() {
     // let out_dir = env::var("OUT_DIR").expect("OUT_DIR not set by Cargo");
-    // println!("cargo:rustc-link-search=native={}", out_dir);
+    // println!("cargo::rustc-link-search=native={}", out_dir);
 
     let mut builder: cc::Build = cc::Build::new();
 
@@ -90,13 +90,13 @@ fn main() {
     */
 
     // 7. Add linker flags
-    println!("cargo:rustc-link-arg=--specs=nano.specs");
-    println!("cargo:rustc-link-arg=--specs=nosys.specs");
-    println!("cargo:rustc-link-arg=-Wl,--gc-sections");
-    println!("cargo:rustc-link-arg=-Wl,--start-group");
-    println!("cargo:rustc-link-arg=-lc");
-    println!("cargo:rustc-link-arg=-lm");
-    println!("cargo:rustc-link-arg=-Wl,--end-group");
+    println!("cargo::rustc-link-arg=--specs=nano.specs");
+    println!("cargo::rustc-link-arg=--specs=nosys.specs");
+    println!("cargo::rustc-link-arg=-Wl,--gc-sections");
+    println!("cargo::rustc-link-arg=-Wl,--start-group");
+    println!("cargo::rustc-link-arg=-lc");
+    println!("cargo::rustc-link-arg=-lm");
+    println!("cargo::rustc-link-arg=-Wl,--end-group");
 
     /*
     All linker flags from STM32CubeIDE
@@ -120,6 +120,6 @@ fn main() {
     builder.compile("stm32_c_drivers");
 
     // 9. this tells the cargo to pass each object file directly to the linker
-    println!("cargo:rustc-link-lib=stm32_c_drivers");
+    println!("cargo::rustc-link-lib=stm32_c_drivers");
 
-}  
+}
