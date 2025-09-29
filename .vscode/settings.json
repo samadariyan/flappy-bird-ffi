@@ -4,7 +4,12 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true
+    "**/Thumbs.db": true,
+    "**/.metadata": true,
+    "**/.settings": true,
+    "**/.cproject": true,
+    "**/.mxproject": true,
+    "**/.project": true
   },
 
   "rust-analyzer.files.exclude": ["build.rs"],
