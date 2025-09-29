@@ -17,7 +17,7 @@ impl Game {
         }
     }
 
-    pub fn update(&mut self) {
-        // todo()
+    pub fn update(&self) {
+        //  todo()
     }
 }

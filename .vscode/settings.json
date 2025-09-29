@@ -1,5 +1,6 @@
 {
   "rust-analyzer.files.exclude": ["build.rs"],
   "rust-analyzer.check.allTargets": false,
-  "rust-analyzer.cargo.target": "thumbv7em-none-eabihf"
+  "rust-analyzer.cargo.target": "thumbv7em-none-eabihf",
+  "rust-analyzer.checkOnSave": true
 }
