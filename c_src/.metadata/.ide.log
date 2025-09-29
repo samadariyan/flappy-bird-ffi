@@ -1925,3 +1925,100 @@
 2025-09-29 17:53:35,897 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 10456mS.
 2025-09-29 17:53:35,900 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 2mS.
 2025-09-29 17:53:35,904 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-09-29 18:08:49,829 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 462480920 Bytes (636485632)
+2025-09-29 18:08:50,023 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-09-29 18:08:50,024 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-09-29 18:08:50,024 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: I2C
+2025-09-29 18:08:50,024 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-09-29 18:08:50,025 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-09-29 18:08:50,025 [INFO] CodeGenerator:892 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.15.0.202507011659//db/
+2025-09-29 18:08:50,134 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/license.tmp_save
+2025-09-29 18:08:50,224 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/license.tmp
+2025-09-29 18:08:50,308 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/gpio.tmp_save
+2025-09-29 18:08:50,381 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/gpio.tmp
+2025-09-29 18:08:50,538 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_it.c_save
+2025-09-29 18:08:50,609 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_it.c
+2025-09-29 18:08:50,613 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_it.h_save
+2025-09-29 18:08:50,679 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_it.h
+2025-09-29 18:08:50,687 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_hal_msp.c_save
+2025-09-29 18:08:50,780 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_hal_msp.c
+2025-09-29 18:08:50,783 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/system.tmp_save
+2025-09-29 18:08:50,846 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/system.tmp
+2025-09-29 18:08:50,852 [INFO] CodeEngine:321 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_hal_conf.h_save
+2025-09-29 18:08:50,954 [INFO] CodeEngine:345 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_hal_conf.h
+2025-09-29 18:08:50,978 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/main.h_save
+2025-09-29 18:08:51,067 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/main.h
+2025-09-29 18:08:51,070 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/main.c_save
+2025-09-29 18:08:51,186 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/main.c
+2025-09-29 18:08:51,483 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 97mS.
+2025-09-29 18:08:51,484 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2025-09-29 18:08:51,668 [INFO] ConfigFileManager:1595 - The Die is : DIE422
+2025-09-29 18:08:52,916 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 1432mS.
+2025-09-29 18:08:52,917 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2025-09-29 18:08:52,918 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-09-29 18:09:28,588 [INFO] Gpio:278 - dependency for GPIO [I2C1]
+2025-09-29 18:09:28,753 [INFO] I2cTimingTraitement:330 - 0x00201D2B
+2025-09-29 18:22:51,836 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 609083408 Bytes (692060160)
+2025-09-29 18:22:51,952 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 630577168 Bytes (692060160)
+2025-09-29 18:22:52,789 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 368103616 Bytes (692060160)
+2025-09-29 18:22:53,037 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-09-29 18:22:53,038 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-09-29 18:22:53,038 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: I2C
+2025-09-29 18:22:53,038 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-09-29 18:22:53,038 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-09-29 18:22:53,039 [INFO] CodeGenerator:892 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.15.0.202507011659//db/
+2025-09-29 18:22:53,215 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/license.tmp_save
+2025-09-29 18:22:53,367 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/license.tmp
+2025-09-29 18:22:53,446 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/gpio.tmp_save
+2025-09-29 18:22:53,528 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/gpio.tmp
+2025-09-29 18:22:53,673 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_it.c_save
+2025-09-29 18:22:53,897 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_it.c
+2025-09-29 18:22:53,900 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_it.h_save
+2025-09-29 18:22:53,959 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_it.h
+2025-09-29 18:22:53,967 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_hal_msp.c_save
+2025-09-29 18:22:54,081 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_hal_msp.c
+2025-09-29 18:22:54,083 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/system.tmp_save
+2025-09-29 18:22:54,144 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/system.tmp
+2025-09-29 18:22:54,152 [INFO] CodeEngine:321 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_hal_conf.h_save
+2025-09-29 18:22:54,215 [INFO] CodeEngine:345 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_hal_conf.h
+2025-09-29 18:22:54,258 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/main.h_save
+2025-09-29 18:22:54,369 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/main.h
+2025-09-29 18:22:54,372 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/main.c_save
+2025-09-29 18:22:54,474 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/main.c
+2025-09-29 18:22:54,763 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 94mS.
+2025-09-29 18:22:54,764 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2025-09-29 18:22:54,882 [INFO] ConfigFileManager:1595 - The Die is : DIE422
+2025-09-29 18:22:56,168 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 1404mS.
+2025-09-29 18:22:56,169 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2025-09-29 18:22:56,170 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-09-29 18:24:56,797 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 557279904 Bytes (699400192)
+2025-09-29 18:24:56,959 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-09-29 18:24:56,959 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-09-29 18:24:56,959 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: I2C
+2025-09-29 18:24:56,959 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-09-29 18:24:56,959 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-09-29 18:24:56,960 [INFO] CodeGenerator:892 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.15.0.202507011659//db/
+2025-09-29 18:24:57,058 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/license.tmp_save
+2025-09-29 18:24:57,110 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/license.tmp
+2025-09-29 18:24:57,170 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/gpio.tmp_save
+2025-09-29 18:24:57,225 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/gpio.tmp
+2025-09-29 18:24:57,346 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_it.c_save
+2025-09-29 18:24:57,404 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_it.c
+2025-09-29 18:24:57,406 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_it.h_save
+2025-09-29 18:24:57,456 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_it.h
+2025-09-29 18:24:57,461 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_hal_msp.c_save
+2025-09-29 18:24:57,544 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/stm32f3xx_hal_msp.c
+2025-09-29 18:24:57,546 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/system.tmp_save
+2025-09-29 18:24:57,597 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/MXTmpFiles/system.tmp
+2025-09-29 18:24:57,604 [INFO] CodeEngine:321 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_hal_conf.h_save
+2025-09-29 18:24:57,665 [INFO] CodeEngine:345 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/stm32f3xx_hal_conf.h
+2025-09-29 18:24:57,680 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/main.h_save
+2025-09-29 18:24:57,745 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Inc/main.h
+2025-09-29 18:24:57,749 [INFO] CodeEngine:265 - oldGeneratedFile, /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/main.c_save
+2025-09-29 18:24:57,835 [INFO] CodeEngine:289 - Generated code: /Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/Core/Src/main.c
+2025-09-29 18:24:58,087 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 62mS.
+2025-09-29 18:24:58,088 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2025-09-29 18:24:58,244 [INFO] ConfigFileManager:1595 - The Die is : DIE422
+2025-09-29 18:24:59,278 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 1190mS.
+2025-09-29 18:24:59,279 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2025-09-29 18:24:59,280 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
