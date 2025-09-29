@@ -7,7 +7,7 @@
     "**/Thumbs.db": true
   },
 
-  "rust-analyzer.files.exclude": ["build.rs", "/build.rs"],
+  "rust-analyzer.files.exclude": ["build.rs"],
   "rust-analyzer.check.allTargets": false,
   "rust-analyzer.cargo.target": "thumbv7em-none-eabihf"
 }

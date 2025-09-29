@@ -47,9 +47,9 @@ fn main() {
 
     //5. Add .s or .asm files (optional)
     builder.file("c_src/lcd_tsc_mpu6050_drivers/Core/Startup/startup_stm32f303cctx.s");
-    // println!(
-    //     "cargo::rerun-if-changed=c_src/lcd_tsc_mpu6050_drivers/Core/Startup/startup_stm32f303cctx.s"
-    // );
+    println!(
+        "cargo::rerun-if-changed=c_src/lcd_tsc_mpu6050_drivers/Core/Startup/startup_stm32f303cctx.s"
+    );
 
     // 6. Add compiler flags
     builder
@@ -120,6 +120,12 @@ fn main() {
     // 8. generate object files for C files
     builder.compile("stm32_c_drivers");
 
+    // let object_files = builder.compile_intermediates();
+
+
     // 9. this tells the cargo to pass each object file directly to the linker
     println!("cargo::rustc-link-lib=stm32_c_drivers");
+    //  for obj_file in &object_files {
+    //     println!("cargo::rustc-link-arg={}", obj_file.display());
+    // }
 }

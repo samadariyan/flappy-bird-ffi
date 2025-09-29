@@ -1308,3 +1308,11 @@
 2025-09-29 13:48:54,263 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 1456mS.
 2025-09-29 13:48:54,264 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
 2025-09-29 13:48:54,265 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-09-29 15:44:48,328 [INFO] WebApp:194 - Connection lost
+2025-09-29 15:44:48,695 [INFO] WebApp:191 - Connection restablished
+2025-09-29 15:44:50,772 [INFO] WebApp:194 - Connection lost
+2025-09-29 15:44:58,367 [INFO] WebApp:191 - Connection restablished
+2025-09-29 16:18:06,452 [INFO] WebApp:403 - JxBrowser engine has been closed 
+2025-09-29 16:18:06,452 [INFO] WebAppUi:504 - JxBrowser engine has been closed 
+2025-09-29 16:18:06,454 [INFO] WebAppUi:541 - Close the Jxbrowser engine manually
+2025-09-29 16:18:10,538 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
