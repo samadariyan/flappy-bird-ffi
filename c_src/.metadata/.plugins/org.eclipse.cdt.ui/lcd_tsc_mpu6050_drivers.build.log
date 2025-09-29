@@ -1,36 +1,257 @@
-20:44:23 **** Build of configuration Debug for project lcd_tsc_mpu6050_drivers ****
+22:04:29 **** Build of configuration Debug for project lcd_tsc_mpu6050_drivers ****
 make -j7 all 
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o"
-arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f303cctx.d" -MT"Core/Startup/startup_stm32f303cctx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f303cctx.o" "../Core/Startup/startup_stm32f303cctx.s"
+arm-none-eabi-gcc "../Core/Src/display.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/display.d" -MT"Core/Src/display.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/display.o"
+arm-none-eabi-gcc "../Core/Src/font.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/font.d" -MT"Core/Src/font.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/font.o"
+arm-none-eabi-gcc "../Core/Src/gc9a01a.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gc9a01a.d" -MT"Core/Src/gc9a01a.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gc9a01a.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/mpu6050.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mpu6050.d" -MT"Core/Src/mpu6050.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mpu6050.o"
 arm-none-eabi-gcc "../Core/Src/stm32f3xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f3xx_hal_msp.d" -MT"Core/Src/stm32f3xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f3xx_hal_msp.o"
 arm-none-eabi-gcc "../Core/Src/stm32f3xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f3xx_it.d" -MT"Core/Src/stm32f3xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f3xx_it.o"
+../Core/Src/main.c: In function 'c_main':
+../Core/Src/main.c:106:1: warning: control reaches end of non-void function [-Wreturn-type]
+  106 | }
+      | ^
+In file included from ../Core/Src/gc9a01a.c:12:
+../Core/Src/gc9a01a.c: In function 'gc9a01a_init':
+../Core/Inc/gc9a01a.h:105:33: error: 'LCD_BL_A_GPIO_Port' undeclared (first use in this function); did you mean 'BL_A_GPIO_Port'?
+  105 | #define BL_A_GPIO_Port          LCD_BL_A_GPIO_Port
+      |                                 ^~~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:117:34: note: in expansion of macro 'BL_A_GPIO_Port'
+  117 | #define GC9A01A_BL_ON           (BL_A_GPIO_Port->BSRR = BL_A_Pin)
+      |                                  ^~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:27:5: note: in expansion of macro 'GC9A01A_BL_ON'
+   27 |     GC9A01A_BL_ON;
+      |     ^~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:105:33: note: each undeclared identifier is reported only once for each function it appears in
+  105 | #define BL_A_GPIO_Port          LCD_BL_A_GPIO_Port
+      |                                 ^~~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:117:34: note: in expansion of macro 'BL_A_GPIO_Port'
+  117 | #define GC9A01A_BL_ON           (BL_A_GPIO_Port->BSRR = BL_A_Pin)
+      |                                  ^~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:27:5: note: in expansion of macro 'GC9A01A_BL_ON'
+   27 |     GC9A01A_BL_ON;
+      |     ^~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:112:41: error: 'LCD_BL_A_Pin' undeclared (first use in this function); did you mean 'LCD_DCX_Pin'?
+  112 | #define BL_A_Pin                        LCD_BL_A_Pin
+      |                                         ^~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:117:57: note: in expansion of macro 'BL_A_Pin'
+  117 | #define GC9A01A_BL_ON           (BL_A_GPIO_Port->BSRR = BL_A_Pin)
+      |                                                         ^~~~~~~~
+../Core/Src/gc9a01a.c:27:5: note: in expansion of macro 'GC9A01A_BL_ON'
+   27 |     GC9A01A_BL_ON;
+      |     ^~~~~~~~~~~~~
 arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+../Core/Inc/gc9a01a.h:129:34: error: 'LCD_RDX_GPIO_Port' undeclared (first use in this function); did you mean 'LCD_DCX_GPIO_Port'?
+  129 | #define GC9A01A_RD_HIGH         (LCD_RDX_GPIO_Port->BSRR = LCD_RDX_Pin) // Set pin
+      |                                  ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:28:5: note: in expansion of macro 'GC9A01A_RD_HIGH'
+   28 |     GC9A01A_RD_HIGH;
+      |     ^~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:129:60: error: 'LCD_RDX_Pin' undeclared (first use in this function); did you mean 'LCD_DCX_Pin'?
+  129 | #define GC9A01A_RD_HIGH         (LCD_RDX_GPIO_Port->BSRR = LCD_RDX_Pin) // Set pin
+      |                                                            ^~~~~~~~~~~
+../Core/Src/gc9a01a.c:28:5: note: in expansion of macro 'GC9A01A_RD_HIGH'
+   28 |     GC9A01A_RD_HIGH;
+      |     ^~~~~~~~~~~~~~~
 arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+../Core/Src/gc9a01a.c: In function 'gc9a01a_draw_image':
+../Core/Inc/gc9a01a.h:109:33: error: 'LCD_WRX_GPIO_Port' undeclared (first use in this function); did you mean 'LCD_DCX_GPIO_Port'?
+  109 | #define WRD_GPIO_Port           LCD_WRX_GPIO_Port
+      |                                 ^~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:34: note: in expansion of macro 'WRD_GPIO_Port'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                  ^~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:126:14: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  126 |              GC9A01A_WRITE_8BIT(color_high);
+      |              ^~~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:115:41: error: 'LCD_WRX_Pin' undeclared (first use in this function); did you mean 'LCD_DCX_Pin'?
+  115 | #define WRD_Pin                         LCD_WRX_Pin
+      |                                         ^~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:57: note: in expansion of macro 'WRD_Pin'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                                         ^~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:126:14: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  126 |              GC9A01A_WRITE_8BIT(color_high);
+      |              ^~~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c: In function 'gc9a01a_hw_reset':
+../Core/Inc/gc9a01a.h:108:33: error: 'LCD_RESET_GPIO_Port' undeclared (first use in this function); did you mean 'LCD_RST_GPIO_Port'?
+  108 | #define LCD_RST_GPIO_Port       LCD_RESET_GPIO_Port
+      |                                 ^~~~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:126:34: note: in expansion of macro 'LCD_RST_GPIO_Port'
+  126 | #define GC9A01A_RST_HIGH        (LCD_RST_GPIO_Port->BSRR = LCD_RST_Pin) // Set pin
+      |                                  ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:213:3: note: in expansion of macro 'GC9A01A_RST_HIGH'
+  213 |   GC9A01A_RST_HIGH  ;
+      |   ^~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:114:33: error: 'LCD_RESET_Pin' undeclared (first use in this function); did you mean 'LCD_RST_Pin'?
+  114 | #define LCD_RST_Pin             LCD_RESET_Pin
+      |                                 ^~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:126:60: note: in expansion of macro 'LCD_RST_Pin'
+  126 | #define GC9A01A_RST_HIGH        (LCD_RST_GPIO_Port->BSRR = LCD_RST_Pin) // Set pin
+      |                                                            ^~~~~~~~~~~
+../Core/Src/gc9a01a.c:213:3: note: in expansion of macro 'GC9A01A_RST_HIGH'
+  213 |   GC9A01A_RST_HIGH  ;
+      |   ^~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c: In function 'gc9a01a_configure':
+../Core/Inc/gc9a01a.h:122:34: error: 'LCD_CSX_GPIO_Port' undeclared (first use in this function); did you mean 'LCD_DCX_GPIO_Port'?
+  122 | #define GC9A01A_CS_LOW          (LCD_CSX_GPIO_Port->BSRR = (LCD_CSX_Pin << 16)) // Reset pin
+      |                                  ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:228:3: note: in expansion of macro 'GC9A01A_CS_LOW'
+  228 |   GC9A01A_CS_LOW;
+      |   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:122:61: error: 'LCD_CSX_Pin' undeclared (first use in this function); did you mean 'LCD_DCX_Pin'?
+  122 | #define GC9A01A_CS_LOW          (LCD_CSX_GPIO_Port->BSRR = (LCD_CSX_Pin << 16)) // Reset pin
+      |                                                             ^~~~~~~~~~~
+../Core/Src/gc9a01a.c:228:3: note: in expansion of macro 'GC9A01A_CS_LOW'
+  228 |   GC9A01A_CS_LOW;
+      |   ^~~~~~~~~~~~~~
 arm-none-eabi-gcc "../Core/Src/system_stm32f3xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f3xx.d" -MT"Core/Src/system_stm32f3xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f3xx.o"
-arm-none-eabi-gcc -o "lcd_tsc_mpu6050_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/samadariyan/Learning/flappy-bird-ffi/c_src/lcd_tsc_mpu6050_drivers/STM32F303CCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lcd_tsc_mpu6050_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: lcd_tsc_mpu6050_drivers.elf
- 
-arm-none-eabi-size  lcd_tsc_mpu6050_drivers.elf 
-arm-none-eabi-objdump -h -S lcd_tsc_mpu6050_drivers.elf  > "lcd_tsc_mpu6050_drivers.list"
-   text	   data	    bss	    dec	    hex	filename
-   9540	     12	   1652	  11204	   2bc4	lcd_tsc_mpu6050_drivers.elf
-Finished building: default.size.stdout
- 
-Finished building: lcd_tsc_mpu6050_drivers.list
- 
+../Core/Src/gc9a01a.c: In function 'gc9a01a_fill_rect':
+../Core/Inc/gc9a01a.h:109:33: error: 'LCD_WRX_GPIO_Port' undeclared (first use in this function); did you mean 'LCD_DCX_GPIO_Port'?
+  109 | #define WRD_GPIO_Port           LCD_WRX_GPIO_Port
+      |                                 ^~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:34: note: in expansion of macro 'WRD_GPIO_Port'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                  ^~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:544:7: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  544 |       GC9A01A_WRITE_8BIT(data[0]);
+      |       ^~~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:115:41: error: 'LCD_WRX_Pin' undeclared (first use in this function); did you mean 'LCD_DCX_Pin'?
+  115 | #define WRD_Pin                         LCD_WRX_Pin
+      |                                         ^~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:57: note: in expansion of macro 'WRD_Pin'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                                         ^~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:544:7: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  544 |       GC9A01A_WRITE_8BIT(data[0]);
+      |       ^~~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c: In function 'gc9a01a_set_address_window':
+../Core/Inc/gc9a01a.h:109:33: error: 'LCD_WRX_GPIO_Port' undeclared (first use in this function); did you mean 'LCD_DCX_GPIO_Port'?
+  109 | #define WRD_GPIO_Port           LCD_WRX_GPIO_Port
+      |                                 ^~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:34: note: in expansion of macro 'WRD_GPIO_Port'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                  ^~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:562:3: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  562 |   GC9A01A_WRITE_8BIT(GC9A01A_CASET); // Column address set command
+      |   ^~~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:115:41: error: 'LCD_WRX_Pin' undeclared (first use in this function); did you mean 'LCD_DCX_Pin'?
+  115 | #define WRD_Pin                         LCD_WRX_Pin
+      |                                         ^~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:57: note: in expansion of macro 'WRD_Pin'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                                         ^~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:562:3: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  562 |   GC9A01A_WRITE_8BIT(GC9A01A_CASET); // Column address set command
+      |   ^~~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c: In function 'gc9a01a_write_cmd':
+../Core/Inc/gc9a01a.h:109:33: error: 'LCD_WRX_GPIO_Port' undeclared (first use in this function); did you mean 'LCD_DCX_GPIO_Port'?
+  109 | #define WRD_GPIO_Port           LCD_WRX_GPIO_Port
+      |                                 ^~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:34: note: in expansion of macro 'WRD_GPIO_Port'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                  ^~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:592:3: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  592 |   GC9A01A_WRITE_8BIT(cmd);
+      |   ^~~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:115:41: error: 'LCD_WRX_Pin' undeclared (first use in this function); did you mean 'LCD_DCX_Pin'?
+  115 | #define WRD_Pin                         LCD_WRX_Pin
+      |                                         ^~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:57: note: in expansion of macro 'WRD_Pin'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                                         ^~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:592:3: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  592 |   GC9A01A_WRITE_8BIT(cmd);
+      |   ^~~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c: In function 'gc9a01a_write_data':
+../Core/Inc/gc9a01a.h:109:33: error: 'LCD_WRX_GPIO_Port' undeclared (first use in this function); did you mean 'LCD_DCX_GPIO_Port'?
+  109 | #define WRD_GPIO_Port           LCD_WRX_GPIO_Port
+      |                                 ^~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:34: note: in expansion of macro 'WRD_GPIO_Port'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                  ^~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:606:5: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  606 |     GC9A01A_WRITE_8BIT(buff[i]);
+      |     ^~~~~~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:115:41: error: 'LCD_WRX_Pin' undeclared (first use in this function); did you mean 'LCD_DCX_Pin'?
+  115 | #define WRD_Pin                         LCD_WRX_Pin
+      |                                         ^~~~~~~~~~~
+../Core/Inc/gc9a01a.h:132:57: note: in expansion of macro 'WRD_Pin'
+  132 | #define GC9A01A_WR_LOW          (WRD_GPIO_Port->BSRR = (WRD_Pin << 16)) // Reset pin
+      |                                                         ^~~~~~~
+../Core/Inc/gc9a01a.h:134:35: note: in expansion of macro 'GC9A01A_WR_LOW'
+  134 | #define GC9A01A_WR_STROBE       { GC9A01A_WR_LOW; GC9A01A_WR_HIGH; }
+      |                                   ^~~~~~~~~~~~~~
+../Core/Inc/gc9a01a.h:149:3: note: in expansion of macro 'GC9A01A_WR_STROBE'
+  149 |   GC9A01A_WR_STROBE; \
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:606:5: note: in expansion of macro 'GC9A01A_WRITE_8BIT'
+  606 |     GC9A01A_WRITE_8BIT(buff[i]);
+      |     ^~~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c: At top level:
+../Core/Src/gc9a01a.c:628:13: warning: 'gc9a01a_lcd_fill_image' defined but not used [-Wunused-function]
+  628 | static void gc9a01a_lcd_fill_image(const uint16_t* data){
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/gc9a01a.c:616:13: warning: 'gc9a01a_invert_colors' defined but not used [-Wunused-function]
+  616 | static void gc9a01a_invert_colors(bool invert) {
+      |             ^~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/gc9a01a.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
 
-20:44:27 Build Finished. 0 errors, 0 warnings. (took 4s.553ms)
+22:04:31 Build Failed. 20 errors, 3 warnings. (took 1s.934ms)
 

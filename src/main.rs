@@ -2,6 +2,9 @@
 #![no_main]
 #![allow(dead_code)]
 
+mod game;
+
+use game::Game;
 use panic_halt as _;
 
 extern "C" {
@@ -13,5 +16,10 @@ extern "C" fn main() -> ! {
     unsafe {
         c_main();
     }
-    loop {}
+
+    let game = Game::init();
+
+    loop {
+        // game.update()
+    }
 }

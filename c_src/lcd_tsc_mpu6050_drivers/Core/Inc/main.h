@@ -60,10 +60,20 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LCD_BL_A_Pin GPIO_PIN_0
+#define LCD_BL_A_GPIO_Port GPIOA
 #define LCD_DCX_Pin GPIO_PIN_1
 #define LCD_DCX_GPIO_Port GPIOB
 #define LCD_DATA0_Pin GPIO_PIN_10
 #define LCD_DATA0_GPIO_Port GPIOA
+#define LCD_RESET_Pin GPIO_PIN_2
+#define LCD_RESET_GPIO_Port GPIOB
+#define LCD_WRX_Pin GPIO_PIN_3
+#define LCD_WRX_GPIO_Port GPIOB
+#define LCD_RDX_Pin GPIO_PIN_4
+#define LCD_RDX_GPIO_Port GPIOB
+#define LCD_CSX_Pin GPIO_PIN_5
+#define LCD_CSX_GPIO_Port GPIOB
 #define MPU6050_TSC_SCL_Pin GPIO_PIN_6
 #define MPU6050_TSC_SCL_GPIO_Port GPIOB
 #define MPU6050_TSC_SDA_Pin GPIO_PIN_7

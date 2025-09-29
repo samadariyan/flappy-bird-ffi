@@ -87,3 +87,55 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samad
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-09-29 20:43:31.831
 !MESSAGE Indexed 'lcd_tsc_mpu6050_drivers' (19 sources, 109 headers) in 2.83 sec: 8,880 declarations; 40,211 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.3%)
+!SESSION 2025-09-29 21:59:26.291 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/samadariyan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samadariyan/.eclipse_keyring -data file:/Users/samadariyan/Learning/flappy-bird-ffi/c_src/
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-29 21:59:31.830
+!MESSAGE Log4j2 initialized with config file /Users/samadariyan/Learning/flappy-bird-ffi/c_src/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-29 21:59:39.584
+!MESSAGE Started RMI Server, listening on port 41338
+!SESSION 2025-09-29 22:00:09.420 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/samadariyan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samadariyan/.eclipse_keyring -data /Users/samadariyan/Learning/flappy-bird-ffi/c_src/
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-29 22:00:15.654
+!MESSAGE Log4j2 initialized with config file /Users/samadariyan/Learning/flappy-bird-ffi/c_src/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-29 22:00:31.453
+!MESSAGE Started RMI Server, listening on port 41339
+!SESSION 2025-09-29 22:26:13.684 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/samadariyan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samadariyan/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-29 22:26:19.245
+!MESSAGE Log4j2 initialized with config file /Users/samadariyan/Learning/flappy-bird-ffi/c_src/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-29 22:26:26.393
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-09-29 22:29:41.524 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/samadariyan/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/samadariyan/.eclipse_keyring -data /Users/samadariyan/Learning/flappy-bird-ffi/c_src/
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-09-29 22:29:46.660
+!MESSAGE Log4j2 initialized with config file /Users/samadariyan/Learning/flappy-bird-ffi/c_src/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-09-29 22:29:54.878
+!MESSAGE Started RMI Server, listening on port 41338
