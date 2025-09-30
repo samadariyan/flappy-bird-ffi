@@ -2,6 +2,7 @@
 #![no_main]
 #![allow(dead_code)]
 
+mod assets;
 mod display;
 mod game;
 
@@ -20,6 +21,7 @@ extern "C" fn main() -> ! {
         display::register_driver(&gc9a01a_driver);
     }
 
+    display::init();
     let game = Game::init();
 
     loop {

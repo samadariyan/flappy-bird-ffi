@@ -1,3 +1,5 @@
+use crate::{assets, display};
+
 pub enum GameState {
     Start,
     Running,
@@ -18,6 +20,17 @@ impl Game {
     }
 
     pub fn update(&self) {
-        //  todo()
+        match self.state {
+            GameState::Start => {
+                // Show. game start screen
+                Game::draw_start_screen();
+            }
+            GameState::Running => {}
+            GameState::End => {}
+        }
+    }
+
+    pub fn draw_start_screen() {
+        display::draw_image(&assets::GAME_NAME_IMAGE_DATA)
     }
 }

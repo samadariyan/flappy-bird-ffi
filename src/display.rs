@@ -1,8 +1,5 @@
 extern "C" {
     fn display_register_driver(driver: *const DisplayDriver);
-}
-
-extern "C" {
     fn display_init();
 }
 
