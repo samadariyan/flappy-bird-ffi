@@ -3,9 +3,11 @@
 #![allow(dead_code)]
 
 mod assets;
+mod config;
 mod display;
 mod game;
 
+use crate::config::*;
 use game::Game;
 use panic_halt as _;
 

@@ -31,6 +31,6 @@ impl Game {
     }
 
     pub fn draw_start_screen() {
-        display::draw_image(&assets::GAME_NAME_IMAGE_DATA)
+        display::draw_image(40, 160, 40, 80, &assets::GAME_NAME_IMAGE_DATA);
     }
 }
