@@ -5,13 +5,12 @@
 mod display;
 mod game;
 
-use display::DisplayDriver;
 use game::Game;
 use panic_halt as _;
 
 extern "C" {
     fn c_main();
-    static gc9a01a_driver: DisplayDriver;
+    static gc9a01a_driver: display::DisplayDriver;
 }
 
 #[no_mangle]
