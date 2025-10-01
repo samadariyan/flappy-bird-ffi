@@ -21,11 +21,14 @@ impl Game {
         }
     }
 
-    pub fn update(&self) {
+    pub fn update(&mut self) {
         match self.state {
             GameState::Start => {
                 // Show. game start screen
                 Game::draw_start_screen();
+                if self.run_countdown() {
+                    self.state = GameState::Running
+                }
             }
             GameState::Running => {}
             GameState::End => {}
@@ -53,6 +56,24 @@ impl Game {
 
         // display::set_background_color(bg_color: color::BACKGROUND) ;
     }
+
+        //returns 'true' if countdown is over , otherwise 'false'
+    fn run_countdown(&mut self) -> bool {
+        if self.countdown_start_time == 0 {
+            self.countdown_start_time = unsafe { HAL_GetTick() };
+        }
+
+        let elapsed = unsafe { HAL_GetTick() } - self.countdown_start_time;
+        let number = if elapsed < 1000 {
+            c"3"
+        } else if elapsed < 2000 {
+            c"2"
+        } else if elapsed < 3000 {
+            c"1"
+        } else {
+            self.countdown_start_time = 0;
+            return true;
+        };
 }
 
 fn print_score_card_background() {
