@@ -35,6 +35,8 @@ impl Game {
     pub fn draw_start_screen() {
         Game::set_background();
         display::draw_image(40, 160, 40, 80, &assets::GAME_NAME_IMG_DATA);
+        let text = c"Game Starts In";
+        display::write_string(0, 120, text, color::RED, color::BACKGROUND);
     }
 
     pub fn set_background() {
@@ -54,6 +56,6 @@ impl Game {
 }
 
 fn print_score_card_background() {
-    display::draw_rect_angle(0, 240, 0, 28, color::WHITE);
-    display::draw_rect_angle(0, 240, 28, 2, color::BLACK);
+    display::draw_rectangle(0, 240, 0, 28, color::WHITE);
+    display::draw_rectangle(0, 240, 28, 2, color::BLACK);
 }

@@ -36,6 +36,7 @@
     "BDCR",
     "BDRST",
     "BDTR",
+    "bgcolor",
     "BIDIMODE",
     "BIDIOE",
     "BLEN",
