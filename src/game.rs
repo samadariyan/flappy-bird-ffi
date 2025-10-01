@@ -1,4 +1,6 @@
-use crate::{assets, display};
+use crate::assets;
+use crate::assets;
+use crate::display;
 
 pub enum GameState {
     Start,
@@ -49,3 +51,5 @@ pub fn set_background() {
 
     // display::set_background_color(bg_color: color::BACKGROUND) ;
 }
+
+fn print_score_card_background() {}

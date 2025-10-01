@@ -3,6 +3,7 @@
 #![allow(dead_code)]
 
 mod assets;
+mod color;
 mod config;
 mod display;
 mod game;
