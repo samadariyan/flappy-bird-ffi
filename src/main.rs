@@ -8,9 +8,10 @@ mod config;
 mod display;
 mod game;
 
-use crate::config::*;
 use game::Game;
 use panic_halt as _;
+
+use config::*;
 
 extern "C" {
     fn c_main();
@@ -25,9 +26,10 @@ extern "C" fn main() -> ! {
     }
 
     display::init();
-    // let game = Game::init();
 
+    let mut game = Game::init();
+    // let mut game = game_init(sensor_input).expect("Game init failed");
     loop {
-        game.update()
+        game.update();
     }
 }
