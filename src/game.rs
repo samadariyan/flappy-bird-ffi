@@ -33,6 +33,7 @@ impl Game {
     }
 
     pub fn draw_start_screen() {
+        Game::set_background();
         display::draw_image(40, 160, 40, 80, &assets::GAME_NAME_IMAGE_DATA);
     }
 }
@@ -52,4 +53,7 @@ pub fn set_background() {
     // display::set_background_color(bg_color: color::BACKGROUND) ;
 }
 
-fn print_score_card_background() {}
+fn print_score_card_background() {
+    display::draw_rect_angle(0, 240, 0, 28, color::WHITE);
+    display::draw_rect_angle(0, 240, 28, 2, color::BLACK);
+}
