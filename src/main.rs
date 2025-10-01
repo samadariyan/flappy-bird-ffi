@@ -27,8 +27,10 @@ extern "C" fn main() -> ! {
 
     display::init();
 
-    let game = Game::init();
-    // let mut game = game_init(sensor_input).expect("Game init failed");
+    let mut game = Game::init();
+
+    Game::draw_start_screen();
+
     loop {
         game.update();
     }

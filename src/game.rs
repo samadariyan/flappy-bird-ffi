@@ -2,6 +2,10 @@ use crate::assets;
 use crate::color;
 use crate::display;
 
+extern "C" {
+    fn HAL_GetTick() -> u32;
+}
+
 pub enum GameState {
     Start,
     Running,
@@ -11,6 +15,7 @@ pub enum GameState {
 pub struct Game {
     state: GameState,
     score: u32,
+    countdown_start_time: u32,
 }
 
 impl Game {
@@ -18,6 +23,7 @@ impl Game {
         Game {
             state: GameState::Start,
             score: 0,
+            countdown_start_time: 0,
         }
     }
 
@@ -25,7 +31,6 @@ impl Game {
         match self.state {
             GameState::Start => {
                 // Show. game start screen
-                Game::draw_start_screen();
                 if self.run_countdown() {
                     self.state = GameState::Running
                 }
@@ -57,7 +62,7 @@ impl Game {
         // display::set_background_color(bg_color: color::BACKGROUND) ;
     }
 
-        //returns 'true' if countdown is over , otherwise 'false'
+    //returns 'true' if countdown is over , otherwise 'false'
     fn run_countdown(&mut self) -> bool {
         if self.countdown_start_time == 0 {
             self.countdown_start_time = unsafe { HAL_GetTick() };
@@ -74,6 +79,10 @@ impl Game {
             self.countdown_start_time = 0;
             return true;
         };
+        display::write_string(112, 156, number, color::BLACK, color::BACKGROUND);
+
+        false
+    }
 }
 
 fn print_score_card_background() {
