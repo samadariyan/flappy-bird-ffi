@@ -27,51 +27,51 @@ impl Obstacle {
         }
     }
 
-    // fn draw(&self) {
-    //     self.draw_top();
-    //     self.draw_bottom();
-    // }
+    fn draw(&self) {
+        self.draw_top();
+        self.draw_bottom();
+    }
 
-    // fn clear_top(&self, x: Coord, width: u32) {
-    //     display::draw_rect_angle(x, width, self.y_top, self.height_top, color::BACKGROUND);
-    // }
+    fn clear_top(&self, x: Coord, width: u32) {
+        display::draw_rectangle(x, width, self.y_top, self.height_top, color::BACKGROUND);
+    }
 
-    // fn clear_bottom(&self, x: Coord, width: u32) {
-    //     display::draw_rect_angle(x, width, self.y_btm, self.height_btm, color::BACKGROUND);
-    // }
+    fn clear_bottom(&self, x: Coord, width: u32) {
+        display::draw_rectangle(x, width, self.y_btm, self.height_btm, color::BACKGROUND);
+    }
 
-    // fn clear(&self) {
-    //     self.clear_top(self.x_top + OBSTACLE_WIDTH as Coord, self.speed);
-    //     self.clear_bottom(self.x_btm + OBSTACLE_WIDTH as Coord, self.speed);
+    fn clear(&self) {
+        self.clear_top(self.x_top + OBSTACLE_WIDTH as Coord, self.speed);
+        self.clear_bottom(self.x_btm + OBSTACLE_WIDTH as Coord, self.speed);
 
-    //     if self.x_top <= LCD_BIGIN {
-    //         self.clear_top(LCD_BIGIN, OBSTACLE_WIDTH);
-    //     }
+        if self.x_top <= LCD_BIGIN {
+            self.clear_top(LCD_BIGIN, OBSTACLE_WIDTH);
+        }
 
-    //     if self.x_btm <= LCD_BIGIN {
-    //         self.clear_bottom(LCD_BIGIN, OBSTACLE_WIDTH);
-    //     }
-    // }
+        if self.x_btm <= LCD_BIGIN {
+            self.clear_bottom(LCD_BIGIN, OBSTACLE_WIDTH);
+        }
+    }
 
-    // fn draw_top(&self) {
-    //     display::draw_rect_angle(
-    //         self.x_top,
-    //         OBSTACLE_WIDTH,
-    //         self.y_top,
-    //         self.height_top,
-    //         color::BLACK,
-    //     );
-    // }
+    fn draw_top(&self) {
+        display::draw_rectangle(
+            self.x_top,
+            OBSTACLE_WIDTH,
+            self.y_top,
+            self.height_top,
+            color::BLACK,
+        );
+    }
 
-    // fn draw_bottom(&self) {
-    //     display::draw_rect_angle(
-    //         self.x_btm,
-    //         OBSTACLE_WIDTH,
-    //         self.y_btm,
-    //         self.height_btm,
-    //         color::BLACK,
-    //     );
-    // }
+    fn draw_bottom(&self) {
+        display::draw_rectangle(
+            self.x_btm,
+            OBSTACLE_WIDTH,
+            self.y_btm,
+            self.height_btm,
+            color::BLACK,
+        );
+    }
 
     // pub fn move_obstacle(&mut self) {
     //     self.x_top -= self.speed as Coord;
