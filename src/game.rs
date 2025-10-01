@@ -34,3 +34,18 @@ impl Game {
         display::draw_image(40, 160, 40, 80, &assets::GAME_NAME_IMAGE_DATA);
     }
 }
+
+pub fn set_background() {
+    // 1. set the background color
+    display::set_background_color(color::BACKGROUND);
+
+    // 2. print the scoreboard area
+    print_score_card_background();
+    // 3. print the plant
+    display::draw_image(0, 60, 210, 30, &assets::PLANT_IMAGE_DATA);
+    display::draw_image(60, 60, 210, 30, &assets::PLANT_IMAGE_DATA);
+    display::draw_image(120, 60, 210, 30, &assets::PLANT_IMAGE_DATA);
+    display::draw_image(180, 60, 210, 30, &assets::PLANT_IMAGE_DATA);
+
+    // display::set_background_color(bg_color: color::BACKGROUND) ;
+}

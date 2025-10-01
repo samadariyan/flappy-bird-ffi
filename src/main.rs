@@ -24,7 +24,7 @@ extern "C" fn main() -> ! {
     }
 
     display::init();
-    let game = Game::init();
+    // let game = Game::init();
 
     loop {
         game.update()
