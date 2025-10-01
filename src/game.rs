@@ -35,7 +35,8 @@ impl Game {
             GameState::Start => {
                 // Show. game start screen
                 if self.run_countdown() {
-                    self.state = GameState::Running
+                    Game::set_background();
+                    self.state = GameState::Running;
                 }
             }
             GameState::Running => {

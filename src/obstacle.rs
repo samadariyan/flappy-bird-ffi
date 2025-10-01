@@ -73,21 +73,21 @@ impl Obstacle {
         );
     }
 
-    // pub fn move_obstacle(&mut self) {
-    //     self.x_top -= self.speed as Coord;
-    //     self.x_btm -= self.speed as Coord;
-    //     self.draw();
-    //     self.clear();
+    pub fn move_obstacle(&mut self) {
+        self.x_top -= self.speed as Coord;
+        self.x_btm -= self.speed as Coord;
+        self.draw();
+        self.clear();
 
-    //     if self.x_top <= LCD_BIGIN {
-    //         self.x_top = LCD_END;
-    //         self.already_scored = false;
-    //     }
+        if self.x_top <= LCD_BIGIN {
+            self.x_top = LCD_END;
+            self.already_scored = false;
+        }
 
-    //     if self.x_btm <= LCD_BIGIN {
-    //         self.x_btm = LCD_END;
-    //     }
-    // }
+        if self.x_btm <= LCD_BIGIN {
+            self.x_btm = LCD_END;
+        }
+    }
 
     // pub fn get_xy_top(&self) -> (Coord, Coord) {
     //     (self.x_top, self.y_top)
