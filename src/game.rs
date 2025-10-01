@@ -1,6 +1,7 @@
 use crate::assets;
 use crate::color;
 use crate::display;
+use crate::obstacle;
 
 extern "C" {
     fn HAL_GetTick() -> u32;
@@ -16,6 +17,7 @@ pub struct Game {
     state: GameState,
     score: u32,
     countdown_start_time: u32,
+    obstacle: obstacle::Obstacle,
 }
 
 impl Game {
@@ -24,6 +26,7 @@ impl Game {
             state: GameState::Start,
             score: 0,
             countdown_start_time: 0,
+            obstacle: obstacle::Obstacle::init(),
         }
     }
 
@@ -35,8 +38,12 @@ impl Game {
                     self.state = GameState::Running
                 }
             }
-            GameState::Running => {}
-            GameState::End => {}
+            GameState::Running => {
+                //
+            }
+            GameState::End => {
+                //
+            }
         }
     }
 

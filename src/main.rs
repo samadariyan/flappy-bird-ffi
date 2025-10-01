@@ -7,6 +7,7 @@ mod color;
 mod config;
 mod display;
 mod game;
+mod obstacle;
 
 use game::Game;
 use panic_halt as _;

@@ -122,11 +122,10 @@ fn main() {
     // builder.compile("stm32_c_drivers");
     let object_files = builder.compile_intermediates();
 
-
     // 9. this tells the cargo to pass each object file directly to the linker
-     
+
     // println!("cargo::rustc-link-lib=stm32_c_drivers");
-     for obj_file in &object_files {
+    for obj_file in &object_files {
         println!("cargo::rustc-link-arg={}", obj_file.display());
     }
 }
