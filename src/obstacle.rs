@@ -44,12 +44,12 @@ impl Obstacle {
         self.clear_top(self.x_top + OBSTACLE_WIDTH as Coord, self.speed);
         self.clear_bottom(self.x_btm + OBSTACLE_WIDTH as Coord, self.speed);
 
-        if self.x_top <= LCD_BIGIN {
-            self.clear_top(LCD_BIGIN, OBSTACLE_WIDTH);
+        if self.x_top <= VIEW_BIGIN - OBSTACLE_WIDTH {
+            self.clear_top(VIEW_BIGIN, OBSTACLE_WIDTH);
         }
 
-        if self.x_btm <= LCD_BIGIN {
-            self.clear_bottom(LCD_BIGIN, OBSTACLE_WIDTH);
+        if self.x_btm <= VIEW_BIGIN - OBSTACLE_WIDTH {
+            self.clear_bottom(VIEW_BIGIN, OBSTACLE_WIDTH);
         }
     }
 
@@ -79,13 +79,13 @@ impl Obstacle {
         self.draw();
         self.clear();
 
-        if self.x_top <= LCD_BIGIN {
-            self.x_top = LCD_END;
+        if self.x_top <= VIEW_BIGIN - OBSTACLE_WIDTH {
+            self.x_top = VIEW_END;
             self.already_scored = false;
         }
 
-        if self.x_btm <= LCD_BIGIN {
-            self.x_btm = LCD_END;
+        if self.x_btm <= VIEW_BIGIN - OBSTACLE_WIDTH {
+            self.x_btm = VIEW_END;
         }
     }
 

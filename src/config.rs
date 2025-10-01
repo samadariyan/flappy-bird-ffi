@@ -9,8 +9,8 @@ pub const OBSTACLE_GAP: u32 = 80;
 pub const SCORE_BOARD_HEIGHT: u32 = 30;
 pub const PLANTS_HEIGHT: u32 = 30;
 
-pub const LCD_BIGIN: Coord = 0;
-pub const LCD_END: Coord = LCD_WIDTH as Coord;
+pub const VIEW_BIGIN: Coord = 0;
+pub const VIEW_END: Coord = LCD_WIDTH as Coord;
 
 pub const INIT_PLAYER_POS_X: Coord = 60;
 pub const INIT_PLAYER_POS_Y: Coord = (SCORE_BOARD_HEIGHT + 10) as Coord;
