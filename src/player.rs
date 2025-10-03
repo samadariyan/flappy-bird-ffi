@@ -33,7 +33,7 @@ impl Player {
 
     fn clear(&self, old_y: Coord) {
         let change_of_y = self.y - old_y;
-        let clear_y = if change_of_y.is_negative() {
+        let _clear_y = if change_of_y.is_negative() {
             self.y + PLAYER_HEIGHT as Coord
         } else {
             old_y
