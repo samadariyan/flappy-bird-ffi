@@ -15,6 +15,7 @@ pub enum GameState {
     Start,
     Running,
     End,
+    Halt,
 }
 
 pub struct Game {
@@ -56,7 +57,10 @@ impl Game {
             GameState::End => {
                 Game::draw_game_over_screen();
                 self.show_score(96, 156);
-                // self.state = GameState::Halt;
+                self.state = GameState::Halt;
+            }
+            GameState::Halt => {
+                //
             }
         }
     }
@@ -165,6 +169,14 @@ impl Game {
 
         let score_str = CStr::from_bytes_with_nul(&buf);
         display::write_string(x, y, score_str.unwrap(), color::BLACK, color::SCORE);
+    }
+
+    pub fn is_over(&self) -> bool {
+        // match self.state {
+        //     GameState::Halt => true,
+        //     _ => false,
+        // }
+        matches!(self.state, GameState::Halt)
     }
 }
 
