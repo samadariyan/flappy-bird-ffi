@@ -89,15 +89,15 @@ impl Obstacle {
         }
     }
 
-    // pub fn get_xy_top(&self) -> (Coord, Coord) {
-    //     (self.x_top, self.y_top)
-    // }
+    pub fn get_xy_top(&self) -> (Coord, Coord) {
+        (self.x_top, self.y_top)
+    }
 
-    // pub fn get_xy_bottom(&self) -> (Coord, Coord) {
-    //     (self.x_btm, self.y_btm)
-    // }
+    pub fn get_xy_bottom(&self) -> (Coord, Coord) {
+        (self.x_btm, self.y_btm)
+    }
 
-    // pub fn get_height(&self) -> (u32, u32) {
-    //     (self.height_top, self.height_btm)
-    // }
+    pub fn get_height(&self) -> (u32, u32) {
+        (self.height_top, self.height_btm)
+    }
 }

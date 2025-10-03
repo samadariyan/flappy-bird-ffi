@@ -1,8 +1,11 @@
 use crate::assets;
 use crate::color;
+use crate::config;
+use crate::config::Coord;
 use crate::display;
 use crate::obstacle;
 use crate::player;
+use core::ffi::CStr;
 
 extern "C" {
     fn HAL_GetTick() -> u32;
@@ -45,11 +48,22 @@ impl Game {
             GameState::Running => {
                 self.player.move_player();
                 self.obstacle.move_obstacle();
+
+                if self.is_collision() {
+                    self.state = GameState::End;
+                }
             }
             GameState::End => {
-                //
+                Game::draw_game_over_screen();
+                self.show_score(96, 156);
+                // self.state = GameState::Halt;
             }
         }
+    }
+
+    pub fn draw_game_over_screen() {
+        Game::set_background();
+        display::draw_image(40, 160, 40, 80, &assets::GAME_OVER_IMAGE_DATA);
     }
 
     pub fn draw_start_screen() {
@@ -94,6 +108,63 @@ impl Game {
         display::write_string(112, 156, number, color::BLACK, color::BACKGROUND);
 
         false
+    }
+    fn is_collision(&self) -> bool {
+        //1. check collision with the ground
+        let (_, player_y) = self.player.get_xy();
+        let hits_ground = (player_y + config::PLAYER_HEIGHT as Coord) >= config::GROUND_Y_POS;
+
+        //2. check collision against the obstacles
+        let (player_x, player_y) = self.player.get_xy();
+        let (top_obstacle_x, top_obstacle_y) = self.obstacle.get_xy_top();
+        let (btm_obstacle_x, btm_obstacle_y) = self.obstacle.get_xy_bottom();
+        let (top_obstacle_h, _) = self.obstacle.get_height();
+
+        let is_horizontal_overlap_with_top = ((player_x + config::PLAYER_WIDTH as Coord)
+            > top_obstacle_x)
+            && (player_x < top_obstacle_x + config::OBSTACLE_WIDTH as Coord);
+
+        let is_horizontal_overlap_with_btm = ((player_x + config::PLAYER_WIDTH as Coord)
+            > btm_obstacle_x)
+            && (player_x < btm_obstacle_x + config::OBSTACLE_WIDTH as Coord);
+
+        let is_hits_top = player_y <= top_obstacle_y + top_obstacle_h as Coord;
+        let is_hits_bottom = (player_y + config::PLAYER_HEIGHT as Coord) >= btm_obstacle_y;
+
+        if hits_ground {
+            return true;
+        }
+
+        if is_horizontal_overlap_with_top && is_hits_top {
+            return true;
+        }
+
+        if is_horizontal_overlap_with_btm && is_hits_bottom {
+            return true;
+        }
+
+        false
+    }
+
+    fn show_score(&self, x: config::Coord, y: config::Coord) {
+        let mut buf = [0u8; 4];
+
+        let score = self.score;
+
+        if score >= 1000 {
+            buf[0] = b'W';
+            buf[1] = b'I';
+            buf[2] = b'N';
+        } else {
+            buf[0] = b'0' + ((score / 100) % 10) as u8;
+            buf[1] = b'0' + ((score / 10) % 10) as u8;
+            buf[2] = b'0' + (score % 10) as u8;
+        }
+
+        buf[3] = b'\0';
+
+        let score_str = CStr::from_bytes_with_nul(&buf);
+        display::write_string(x, y, score_str.unwrap(), color::BLACK, color::SCORE);
     }
 }
 
