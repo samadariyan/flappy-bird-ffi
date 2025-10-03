@@ -8,6 +8,7 @@ mod config;
 mod display;
 mod game;
 mod obstacle;
+mod player;
 
 use game::Game;
 use panic_halt as _;
