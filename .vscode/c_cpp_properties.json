@@ -4,10 +4,10 @@
       "name": "Mac",
       "includePath": ["${workspaceFolder}/**"],
       "defines": [
-        "_DEBUG",
-        "_UNICODE",
-        "UNICODE",
-        "DEBUG",
+        // "_UNICODE",
+        // "_DEBUG",
+        // "UNICODE",
+        // "DEBUG",
         "USE_HAL_DRIVER",
         "STM32F303xC"
       ],

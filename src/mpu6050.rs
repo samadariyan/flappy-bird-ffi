@@ -7,6 +7,10 @@ use embedded_hal_1::i2c::I2c;
 use embedded_hal_mpu6050_driver::mpu6050::Mpu6050;
 
 use crate::{config::Coord, game::InputDevice};
+#[allow(unused_imports)]
+use rtt_target::rprintln;
+#[allow(unused_imports)]
+use rtt_target::rtt_init_print;
 
 pub struct SensorInput<T: I2c> {
     pub mpu6050: Mpu6050<T>,

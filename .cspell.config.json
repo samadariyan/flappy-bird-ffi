@@ -22,6 +22,7 @@
     "AHBRSTR",
     "AIRCR",
     "ALST",
+    "ANALOGFILTER",
     "Analogx",
     "ANFOFF",
     "ANOFF",
