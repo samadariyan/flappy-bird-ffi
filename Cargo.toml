@@ -3,6 +3,13 @@ name = "flappy-bird-ffi"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "flappy-bird-ffi"
+path = "src/main.rs"
+test = false
+doctest = false
+bench = false
+
 [dependencies]
 panic-halt = "1.0.0"
 embedded_hal_mpu6050_driver = { path = "crates/embedded_hal_mpu6050_driver/", default-features = false }
