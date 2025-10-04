@@ -33,28 +33,28 @@ impl Obstacle {
     }
 
     fn clear_top(&self, x: Coord, width: u32) {
-        display::draw_rectangle(x, width, self.y_top, self.height_top, color::BACKGROUND);
+        display::draw_rect_angle(x, width, self.y_top, self.height_top, color::BACKGROUND);
     }
 
     fn clear_bottom(&self, x: Coord, width: u32) {
-        display::draw_rectangle(x, width, self.y_btm, self.height_btm, color::BACKGROUND);
+        display::draw_rect_angle(x, width, self.y_btm, self.height_btm, color::BACKGROUND);
     }
 
     fn clear(&self) {
         self.clear_top(self.x_top + OBSTACLE_WIDTH as Coord, self.speed);
         self.clear_bottom(self.x_btm + OBSTACLE_WIDTH as Coord, self.speed);
 
-        if self.x_top <= VIEW_BIGIN - OBSTACLE_WIDTH as i32 {
+        if self.x_top <= VIEW_BIGIN {
             self.clear_top(VIEW_BIGIN, OBSTACLE_WIDTH);
         }
 
-        if self.x_btm <= VIEW_BIGIN - OBSTACLE_WIDTH as i32 {
+        if self.x_btm <= VIEW_BIGIN {
             self.clear_bottom(VIEW_BIGIN, OBSTACLE_WIDTH);
         }
     }
 
     fn draw_top(&self) {
-        display::draw_rectangle(
+        display::draw_rect_angle(
             self.x_top,
             OBSTACLE_WIDTH,
             self.y_top,
@@ -64,7 +64,7 @@ impl Obstacle {
     }
 
     fn draw_bottom(&self) {
-        display::draw_rectangle(
+        display::draw_rect_angle(
             self.x_btm,
             OBSTACLE_WIDTH,
             self.y_btm,
@@ -79,12 +79,12 @@ impl Obstacle {
         self.draw();
         self.clear();
 
-        if self.x_top <= VIEW_BIGIN - OBSTACLE_WIDTH as i32 {
+        if self.x_top <= VIEW_BIGIN {
             self.x_top = VIEW_END;
             self.already_scored = false;
         }
 
-        if self.x_btm <= VIEW_BIGIN - OBSTACLE_WIDTH as i32 {
+        if self.x_btm <= VIEW_BIGIN {
             self.x_btm = VIEW_END;
         }
     }

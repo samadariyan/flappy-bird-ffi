@@ -1,11 +1,13 @@
+use core::ffi;
+
 use crate::assets;
 use crate::color;
-use crate::config;
-use crate::config::Coord;
+use crate::config::PLAYER_Y_MAX;
+use crate::config::PLAYER_Y_MIN;
+use crate::config::{self, Coord};
 use crate::display;
 use crate::obstacle;
 use crate::player;
-use core::ffi::CStr;
 
 extern "C" {
     fn HAL_GetTick() -> u32;
@@ -18,78 +20,107 @@ pub enum GameState {
     Halt,
 }
 
-pub struct Game {
+pub trait InputDevice {
+    type Error;
+    fn init(&mut self) -> Result<(), Self::Error>;
+    fn log_data(&mut self) {}
+    fn is_tap(&mut self, y_min: Coord, y_max: Coord) -> Result<(Coord, bool), Self::Error>;
+}
+
+pub struct Game<T: InputDevice> {
     state: GameState,
     score: u32,
     countdown_start_time: u32,
     obstacle: obstacle::Obstacle,
     player: player::Player,
+    pub input_device: T,
 }
 
-impl Game {
-    pub fn init() -> Self {
-        Game {
+impl<T: InputDevice> Game<T> {
+    pub fn init(mut input_device: T) -> Result<Self, T::Error> {
+        input_device.init()?;
+
+        let game = Game {
             state: GameState::Start,
             score: 0,
             countdown_start_time: 0,
             obstacle: obstacle::Obstacle::init(),
             player: player::Player::init(),
-        }
+            input_device,
+        };
+
+        Ok(game)
     }
 
     pub fn update(&mut self) {
         match self.state {
             GameState::Start => {
-                // Show. game start screen
                 if self.run_countdown() {
-                    Game::set_background();
+                    Game::<T>::set_background();
                     self.state = GameState::Running;
                 }
             }
+
             GameState::Running => {
-                self.player.move_player();
+                let (_, player_curr_y) = self.player.get_xy();
+
+                if let Ok(data) = self.input_device.is_tap(0, 239) {
+                    let new_y = data.0;
+                    let is_tap = data.1;
+
+                    if is_tap {
+                        self.player
+                            .move_player(new_y.clamp(PLAYER_Y_MIN, PLAYER_Y_MAX));
+                    } else {
+                        self.player.move_player(player_curr_y);
+                    }
+                } else {
+                    panic!("Input device error");
+                }
+
                 self.obstacle.move_obstacle();
 
                 if self.is_collision() {
                     self.state = GameState::End;
                 }
+
+                self.update_score();
             }
+
             GameState::End => {
-                Game::draw_game_over_screen();
+                Game::<T>::draw_game_over_screen();
                 self.show_score(96, 156);
                 self.state = GameState::Halt;
             }
-            GameState::Halt => {
-                //
-            }
+
+            GameState::Halt => {}
         }
     }
 
     pub fn draw_game_over_screen() {
-        Game::set_background();
+        Game::<T>::set_background();
         display::draw_image(40, 160, 40, 80, &assets::GAME_OVER_IMAGE_DATA);
     }
 
     pub fn draw_start_screen() {
-        Game::set_background();
+        Game::<T>::set_background();
         display::draw_image(40, 160, 40, 80, &assets::GAME_NAME_IMG_DATA);
         let text = c"Game Starts In";
         display::write_string(0, 120, text, color::RED, color::BACKGROUND);
     }
 
     pub fn set_background() {
-        // 1. set the background color
+        //1. set the background color
         display::set_background_color(color::BACKGROUND);
 
-        // 2. print the scoreboard area
+        //2. print the scoreboard area
         print_score_card_background();
-        // 3. print the plant
-        display::draw_image(0, 60, 210, 30, &assets::PLANT_IMG_DATA);
-        display::draw_image(60, 60, 210, 30, &assets::PLANT_IMG_DATA);
-        display::draw_image(120, 60, 210, 30, &assets::PLANT_IMG_DATA);
-        display::draw_image(180, 60, 210, 30, &assets::PLANT_IMG_DATA);
 
-        // display::set_background_color(bg_color: color::BACKGROUND) ;
+        //3. print the plant
+        display::draw_image(0, 60, 210, config::PLANTS_HEIGHT, &assets::PLANT_IMG_DATA);
+        display::draw_image(60, 60, 210, config::PLANTS_HEIGHT, &assets::PLANT_IMG_DATA);
+        display::draw_image(120, 60, 210, config::PLANTS_HEIGHT, &assets::PLANT_IMG_DATA);
+        display::draw_image(180, 60, 210, config::PLANTS_HEIGHT, &assets::PLANT_IMG_DATA);
     }
 
     //returns 'true' if countdown is over , otherwise 'false'
@@ -109,10 +140,24 @@ impl Game {
             self.countdown_start_time = 0;
             return true;
         };
+
         display::write_string(112, 156, number, color::BLACK, color::BACKGROUND);
 
         false
     }
+
+    fn update_score(&mut self) {
+        let (player_x, _) = self.player.get_xy();
+        let (x_top, _) = self.obstacle.get_xy_top();
+
+        if player_x > (x_top + config::OBSTACLE_WIDTH as Coord) && !self.obstacle.already_scored {
+            self.score += 1;
+            self.obstacle.already_scored = true;
+        }
+
+        self.show_score(96, 0);
+    }
+
     fn is_collision(&self) -> bool {
         //1. check collision with the ground
         let (_, player_y) = self.player.get_xy();
@@ -167,7 +212,7 @@ impl Game {
 
         buf[3] = b'\0';
 
-        let score_str = CStr::from_bytes_with_nul(&buf);
+        let score_str = ffi::CStr::from_bytes_with_nul(&buf);
         display::write_string(x, y, score_str.unwrap(), color::BLACK, color::SCORE);
     }
 
@@ -181,6 +226,6 @@ impl Game {
 }
 
 fn print_score_card_background() {
-    display::draw_rectangle(0, 240, 0, 28, color::WHITE);
-    display::draw_rectangle(0, 240, 28, 2, color::BLACK);
+    display::draw_rect_angle(0, 240, 0, 28, color::WHITE);
+    display::draw_rect_angle(0, 240, 28, 2, color::BLACK);
 }
