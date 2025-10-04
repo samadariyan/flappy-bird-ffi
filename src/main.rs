@@ -12,8 +12,6 @@ mod mpu6050;
 mod obstacle;
 mod player;
 
-use core::pin::Pin;
-
 use game::{Game, InputDevice};
 use i2c_adapter::I2cAdapter;
 use panic_halt as _;
@@ -21,9 +19,9 @@ use stm32f3xx_hal::flash::FlashExt;
 use stm32f3xx_hal::gpio::GpioExt;
 use stm32f3xx_hal::gpio::{OpenDrain, AF4, PB6, PB7};
 use stm32f3xx_hal::i2c::I2c as hal_i2c;
+use stm32f3xx_hal::pac;
 use stm32f3xx_hal::rcc::RccExt;
 use stm32f3xx_hal::time::rate::{Hertz, Kilohertz};
-use stm32f3xx_hal::{pac, time};
 
 use config::*;
 
@@ -50,10 +48,6 @@ extern "C" fn main() -> ! {
 
     loop {
         if !game.is_over() {
-            unsafe {
-                //HAL_Delay(1);
-            }
-
             game.input_device.log_data();
             game.update();
         }

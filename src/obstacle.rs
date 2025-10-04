@@ -17,7 +17,7 @@ impl Obstacle {
     pub fn init() -> Self {
         Obstacle {
             x_top: 240,
-            y_top: 0 + SCORE_BOARD_HEIGHT as Coord,
+            y_top: VIEW_BIGIN + SCORE_BOARD_HEIGHT as Coord,
             x_btm: 240,
             y_btm: 180,
             speed: SPEED,
